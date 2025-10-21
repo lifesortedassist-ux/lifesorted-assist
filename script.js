@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   // 【！關鍵！】請將您的 Apps Script 網址中間那段最長的 ID，替換掉下方 SCRIPT_ID 引號中的內容。
-  const SCRIPT_ID = 'AKfycby9X4eFUwHwE4qb2H5FvccCn3QVZ2kSv9KBbuJLs5Cx6vzMC638KD0lJspBgKreMj5n'; // <--- 請修改這裡，貼上您自己的 ID
+  const SCRIPT_ID = 'AKfycbzQcq9waeFs2vahNRoduEMGR9jBjGeuc0WE8SKuaFeph_MLQvmNVm0xS-vSFetk3wFpuA'; // <--- 請修改這裡，貼上您自己的 ID
 
   const API_URL = 'https://script.google.com/macros/s/' + SCRIPT_ID + '/exec';
   
@@ -126,3 +126,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 });
+
