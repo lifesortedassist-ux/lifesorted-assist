@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LifeSorted Assist | 您的智慧生活助理</title>
+  <!-- 連結外部 CSS 樣式表 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 儀表板 HTML 結構開始 -->
+  <div class="body-padding">
+      <div class="dashboard-container">
+        <h1>生活風格決策儀表板</h1>
+
+        <div class="step">
+          <h3>1. 選擇您的探索條件</h3>
+          <div class="filter-section">
+            <div class="form-control">
+              <label for="county-select">縣市</label>
+              <select id="county-select">
+                <option value="台北市">台北市</option>
+              </select>
+            </div>
+            <div class="form-control">
+              <label for="date-picker">日期</label>
+              <input type="date" id="date-picker"/>
+            </div>
+            <button id="explore-btn" class="btn btn-primary">已選擇</button>
+          </div>
+        </div>
+
+        <div class="step" id="step-2" style="display: none;">
+          <h3>2. 選擇您感興趣的類別</h3>
+          <div id="tags-container" class="tags-container"></div>
+        </div>
+
+        <div class="step" id="step-3" style="display: none;">
+          <h3>3. 探索結果</h3>
+          <div id="results-container" class="results-container"></div>
+          <div id="loader" style="display: none;">正在載入活動...</div>
+          <div id="no-results" style="display: none;">找不到符合條件的活動。</div>
+        </div>
+      </div>
+  </div>
+  <!-- 儀表板 HTML 結構結束 -->
+
+  <!-- 連結外部 JavaScript 檔案 -->
+  <script src="script.js"></script>
+</body>
+</html>
